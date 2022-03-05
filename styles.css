@@ -1,0 +1,573 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+header img {
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+.text-header {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+.text-header h1 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: white;
+    line-height: 2.6rem;
+}
+.text-header p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #FFE9D5;
+    margin:25px 0px;
+    line-height: 1.8rem;
+}
+.text-header a {
+    position:absolute;
+    top: calc(100% - 24px);
+    left: calc(50% - 108.5px);
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #201E1C;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #FAF8F7;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 4px;
+
+}
+.text-header span {
+    display: inline-block;
+    margin-left: 7px;
+    width:13px;
+    height:8px;
+    background-image: url(./assets/iconos/Vector.svg);
+}
+main {
+    width: 100%;
+    height: auto;
+    background-color: #E5E5E5;
+    font-weight: 500;
+}
+.first-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.bitcoin-image {
+    background-image: url(./assets/imagenes/bitcoin.svg);
+    display: inline-block;
+    width: 195px;
+    height: 195px;
+    align-self: center;
+}
+.first-section-text {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin:0 auto;
+}
+.first-section-text h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 30px 0 ;
+}
+.first-section-text p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+/* TABLA CRIPTOS */
+
+
+.first-section-tabla {
+    width: 90%;
+    height: auto;
+    margin:0 auto;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.first-section-tabla-flex {
+    margin: 0 20px;
+}
+.first-section-tabla h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #FF9536;
+    margin: 10px 12px;
+    display: inline-block;
+}
+.first-section-tabla-title {
+    margin: 10px auto;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #FF9536;
+}
+.first-section-tabla .tabla-criptos {
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    margin:0 auto;
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 160px;
+    max-height: 260px;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+}
+
+.tabla-criptos-monedas {
+    font-size: 1.6rem;
+    color: #B5B0AC;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.tabla-cripto-valor {
+    font-size: 1.4rem ;
+    color: #757575;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #E5E5E5;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.tabla-criptos-monedas p {
+    align-self: center;
+}
+.tabla-cripto-valor p {
+    align-self: center;;
+}
+.tabla-cripto-valor .trending-down {
+    background-image: url(./assets/iconos/trending-down.svg);
+    width: 12px;
+    height: 13px;
+    align-self: center;
+    
+}
+.tabla-cripto-valor .trending-up {
+    background-image: url(./assets/iconos/trending-up.svg);
+    width: 12px;
+    height: 13px;
+    align-self: center;
+    
+}
+.valor-actualizado {
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #FFE9D4;
+    border-radius: 5px;
+    padding: 5px;
+    margin:0 auto;
+    margin-top: 15px;
+}
+.valor-actualizado-bold {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.valor-actualizado p {
+    font-size: 1.6rem;
+}
+
+/* TABLA COMISONES */
+.second-section-tabla-title {
+    margin: 10px auto;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1A9AF7;
+}
+.tabla-comisiones-container {
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    margin:0 auto;
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 160px;
+    max-height: 260px;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+}
+.tabla-comisiones {
+    font-size: 1.6rem;
+    color: #B5B0AC;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.tabla-comisiones p {
+    align-self: center;
+}
+.tabla-comisiones-valor {
+    font-size: 1.4rem ;
+    color: #757575;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.tabla-comisiones-valor p {
+    align-self: center;
+}
+.valor-actualizado-blue {
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 5px;
+    margin:0 auto;
+    margin-top: 15px;
+    background-color: #E7F5FF;
+
+}
+.valor-actualizado-blue p {
+    font-size: 1.6rem;
+}
+.valor-actualizado-blue-bold {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+/* TABLA CRIPTOS */
+
+
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color:#201E1C;
+    padding-bottom: 20px;
+}
+
+.main-product-detail--icon {
+    background-image: url(./assets/iconos/batataicon.svg);
+    display: inline-block;
+    width: 41px;
+    height: 25px;
+    position: absolute;
+    left: calc(50% - 22px);
+    top: calc(0% - 12px);
+}
+.product-title {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.product-title h1 {
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 700;
+    line-height: 26px;
+}
+.product-title p {
+    font-size: 1.4rem;
+    color: #808080;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.product-cards--container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.product-detail--card {
+    min-width: 290px;
+    max-width: 400px;
+    min-height: 150px;
+    background-color: #282623;
+    border-radius: 4px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product-detail--card .clock{
+    background-image: url(./assets/iconos/clock.svg);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top:10px;
+    margin-left: 10px;
+}
+.product-detail--card .eye {
+    background-image: url(./assets/iconos/eye.svg);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top:10px;
+    margin-left: 10px;
+   
+}
+.product-detail--card .dollars {
+    background-image: url(./assets/iconos/dollar-sign.svg);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top:10px;
+    margin-left: 10px;
+
+}
+.product-detail--card .check {
+    background-image: url(./assets/iconos/check-circle.svg);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top:10px;
+    margin-left: 10px;
+    
+}
+.product-detail--card .product-card--title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    margin: 10px;
+    margin-top: 5px;
+}
+.product-detail--card .product-card--text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 18px;
+    margin-left: 10px;
+    color: #808080;
+}
+
+/* SECCION COMODIN /**/
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url(./assets/imagenes/BitcoinBaby);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.bitcoin-img-container h2{
+    font-size: 2.4rem;
+    font-weight:bold ;
+    line-height: 2.6rem;
+    padding-top: 60px;
+    color: white;
+}
+
+/* SECTION PLANES */
+.planes-section {
+    background-color: #E5E5E5;
+    height:auto ;
+}
+.planes-section--titles{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 45px;
+    text-align: center;
+}
+.planes-section--titles h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.planes-section--titles p{
+    font-size: 1.4rem;
+    color: #757575;
+}
+.planes-cards--container{
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.planes-cards-items {
+    scroll-snap-align:center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    min-height: 247px;
+    background-color:white;
+    border-radius: 8px;
+    margin: 40px 5px;
+    position: relative;
+    padding: 25px 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.plan-recomendado {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(0% - 16px);
+    display: inline-block;
+    padding:8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    background-color: #F7931A;
+    border-radius: 5px;
+}
+.plan-basico {
+    position: absolute;
+    left: calc(50% - 22.24px);
+    top: calc(0% - 16px);
+    display: inline-block;
+    padding:8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    background-color:rgb(25, 153, 247) ;
+    border-radius: 5px;
+
+}
+.plan-intermedio {
+    position: absolute;
+    left: calc(50% - 40px);
+    top: calc(0% - 16px);
+    display: inline-block;
+    padding:8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    background-color:rgb(117, 25, 124) ;
+    border-radius: 5px;
+}
+.plan-recomendado h2 {
+    font-size: 1.4rem;
+
+}
+.planes-cards-items .precio {
+    font-size: 5.2rem;
+    font-weight: bold;
+}
+.planes-cards-items .precio span {
+    font-size: 1.2rem;
+    top: 50px;
+    left: calc(50% - 42px);
+    position: absolute;
+}
+.planes-cards-items .ahorro {
+    font-size: 1.2rem;
+    color: #757575;
+    margin: 15px 0px;
+}
+.planes-cards-items button {
+    background-color: #FAF8F7;
+    padding: 10px 15px;
+    border:solid 2.5px #F7931A ;
+    border-radius: 4px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    cursor: pointer;
+}
+.planes-cards-items button span {
+    background-image: url(./assets/iconos/arrow-right.svg);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    min-width: 320px;
+    height: 25vh;
+    background-color: #F7931A;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: 'DM Sans', sans-serif;
+}
+footer .links {
+justify-self:center;
+align-self: center;
+}
+footer .links ul {
+    list-style: none;
+}
+.links ul a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+    display: inline-block;
+    margin: 5px;
+    margin-top:5px ;
+}
+footer .icon {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.icon span {
+    background-image: url(./assets/iconos/papafooter.svg);
+    width: 41px;
+    height: 24px;
+    display: inline-block;
+}
+.icon p {
+    font-size: 0.8rem;
+    color: white;
+}
+    

@@ -1,0 +1,4 @@
+.planes-cards--container {
+    justify-content: space-evenly;
+    overflow-x: hidden;
+}
